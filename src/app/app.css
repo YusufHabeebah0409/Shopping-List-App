@@ -16,10 +16,11 @@ section {
 div {
   width: 100%;
   max-width: 400px;
-  background: #fff;
+  /* background: #fff; */
+  background-color: #FAFAFA;
   padding: 10px;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -32,7 +33,7 @@ h3 {
 .big-image {
   max-width: 55%;
   display: block;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 input {
@@ -44,14 +45,14 @@ input {
   border-radius: 5px;
   font-size: 1em;
   text-align: center;
-  background-color: #FAFAFA; 
-  color: #333;  
+  background-color: #FAFAFA;
+  color: #333;
 }
 
 button {
   width: 90%;
   padding: 10px 15px;
-  background:teal;
+  background: teal;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -70,7 +71,8 @@ table {
   width: 100%;
   margin-top: 20px;
   border-collapse: collapse;
-}
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 table tr {
   border: 1px solid #ccc;
@@ -78,7 +80,6 @@ table tr {
   text-align: center;
   background: #E9F7EF;
 }
-
 
 table button {
   background: transparent;
@@ -91,64 +92,36 @@ table button {
   width: 20px;
   height: 20px;
 }
+
 .edit-button svg {
   fill: #5bc0de;
   width: 20px;
   height: 20px;
 }
 
-/* --- MOBILE RESPONSIVE STYLES --- */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   div {
-    padding: 15px;
+    margin-top: 15%;
+    padding: 10px;
+    border-radius: 10px;
   }
 
-  h1 {
+  h3 {
     font-size: 1.5rem;
+    margin: 10px 0;
   }
 
   .big-image {
-    max-width: 80px;
+    max-width: 70%;
   }
 
-  input[type="text"] {
+  input, button {
     width: 100%;
-    margin: 5px 0;
+    font-size: 0.9rem;
+    padding: 8px;
   }
 
-  button {
-    width: 100%;
-    margin: 8px 0;
-  }
-
-  table, thead, tbody, th, td, tr {
-    display: block;
-    width: 100%;
-  }
-
-  thead {
-    display: none; /* hide table header on small screens */
-  }
-
-  tr {
-    margin-bottom: 15px;
-    background: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.05);
-    padding: 10px;
-  }
-
-  td {
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 5px;
-    font-size: 0.95rem;
-  }
-
-  td:before {
-    content: attr(data-label);
-    font-weight: bold;
-    color: #555;
+  table {
+    font-size: 0.9rem;
   }
 }
