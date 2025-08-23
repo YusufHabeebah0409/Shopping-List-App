@@ -13,7 +13,7 @@ section {
   padding: 15px;
 }
 
-div {
+section div {
   width: 100%;
   max-width: 400px;
   /* background: #fff; */
@@ -24,7 +24,7 @@ div {
   text-align: center;
 }
 
-h3 {
+section h3 {
   font-size: 2rem;
   margin: 15px 0;
   color: #4CB5AB;
@@ -36,7 +36,7 @@ h3 {
   margin: 0 auto;
 }
 
-input {
+section input {
   display: block;
   padding: 10px;
   width: 90%;
@@ -49,7 +49,7 @@ input {
   color: #333;
 }
 
-button {
+section button {
   width: 90%;
   padding: 10px 15px;
   background: teal;
@@ -62,26 +62,26 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
+section button:hover {
   background: #4CB5AB;
 }
 
 /* Table Styling */
-table {
+section table {
   width: 100%;
   margin-top: 20px;
   border-collapse: collapse;
   font-size: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
-table tr {
+section table tr {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
   background: #E9F7EF;
 }
 
-table button {
+section table button {
   background: transparent;
   border: none;
   cursor: pointer;
@@ -100,13 +100,13 @@ table button {
 }
 
 @media (max-width: 500px) {
-  div {
+  section div {
     margin-top: 15%;
     padding: 10px;
     border-radius: 10px;
   }
 
-  h3 {
+  section h3 {
     font-size: 1.5rem;
     margin: 10px 0;
   }
@@ -115,13 +115,13 @@ table button {
     max-width: 70%;
   }
 
-  input, button {
+  section input, section button {
     width: 100%;
     font-size: 0.9rem;
     padding: 8px;
   }
 
-  table {
+  section table {
     font-size: 0.9rem;
   }
 }

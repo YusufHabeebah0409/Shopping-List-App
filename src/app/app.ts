@@ -44,11 +44,14 @@ export class App {
   }
 
   editItem(index: number) {
-    alert("working on it ")
-    // const item = this.shoppingLists[index];
-    // this.shoppingList = item.item;
-    // this.shoppingListQuantity = item.quantity;
-    // this.removeItem(index);
+    const newItem = prompt("Edit item:", this.shoppingLists[index].item);
+    const newQuantity = prompt("Edit quantity/price:", this.shoppingLists[index].quantity);
+    if (newItem !== null && newQuantity !== null ) {
+      this.shoppingLists[index] = { item: newItem, quantity: newQuantity };
+      localStorage.setItem('shoppingList', JSON.stringify(this.shoppingLists));
+    } else {
+      alert("Both fields are required.");
+    }
   }
 
 }
