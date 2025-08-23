@@ -1,10 +1,7 @@
-<h1>Shopping List App</h1>
-<p>Welcome to the Shopping List App!</p>
-<p>This app allows you to manage your shopping list efficiently.</p>
-<p>Start adding items to your list now!</p>
-
 <section>
     <div>
+        <h3>Shopping List App</h3>
+        <img src="chart.png" alt="Shopping Cart" class="big-image">
         <input type="text" placeholder="Item" [(ngModel)]="shoppingList">
         <input type="text" placeholder="Quantity/Price" [(ngModel)]="shoppingListQuantity">
         <button (click)="addItem()">Add Item</button>
@@ -14,7 +11,7 @@
                 <td>{{$index+1}}.</td>
                 <td>{{item.item}}</td>
                 <td>{{item.quantity}}</td>
-                <td><button (click)="removeItem($index)">
+                <td><button (click)="removeItem($index)" class="remove-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-x-lg" viewBox="0 0 16 16">
                             <path
@@ -22,7 +19,7 @@
                         </svg>
                     </button></td>
 
-                <td><button (click)="editItem($index)">
+                <td><button (click)="editItem($index)" class="edit-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-pencil-square" viewBox="0 0 16 16">
                             <path

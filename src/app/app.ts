@@ -27,7 +27,8 @@ export class App {
     if( delItem === true){
     this.shoppingLists.splice(index, 1);
     localStorage.setItem('shoppingList', JSON.stringify(this.shoppingLists));
-    }  
+    }
+  
   }
 
   editItem(index: number) {
